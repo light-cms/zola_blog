@@ -1,4 +1,4 @@
-name: cloudflare pages
+name: github pages
 
 on:
   push:
@@ -30,18 +30,11 @@ jobs:
           key: mise-${{ runner.os }}-${{ hashFiles('mise.toml') }}
           restore-keys: |
             mise-${{ runner.os }}-
-      - name: Install dependencies
+      - name: Build
         run: |
             mise trust
             mise deps
-            mise install
             mise run build
-#             mise run deploy
-#         env:
-#           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-#           # CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-#           # CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-#
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main

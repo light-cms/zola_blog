@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://light-cms.github.io"
+base_url = "https://light-cms.github.io/zola_blog"
 
 title = "Zola Blog"
 description = "A basic displayable Zola blog boilerplate."
