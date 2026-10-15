@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-Allow: /
-Sitemap: https://light-cms.github.io/zola_blog/sitemap.xml
