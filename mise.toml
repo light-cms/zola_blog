@@ -1,0 +1,9 @@
+[tools]
+zola = "latest"
+node = "24"
+
+[tasks]
+start = "zola server "
+build = "zola"
+index = "npx pagefind --site public"
+deploy = "surge publish ./public blogtemplate.surge.sh"
