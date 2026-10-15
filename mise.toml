@@ -1,8 +1,7 @@
 [tools]
 zola = "latest"
-node = "24"
-
+bun = "latest"
 [tasks]
 start = "zola server "
 build = "zola build"
-index = "npx pagefind --site public"
+index = "bun x pagefind --site public"
